@@ -1,0 +1,66 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700,800');
+
+// Variables
+@import 'variables';
+@import 'css_reset';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body, html {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 500 !important;
+	width: 100%;
+	height: 100%;
+	// убирает вообще в принципе горизонтальную полосу прокрутки!
+	overflow-x:  hidden !important; 
+}
+.page{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.cont{
+	margin: auto;
+	max-width: 1170px;
+	padding: 0 20px;
+	height: 100%;
+	@media (max-width: 992px) {
+		max-width: 750px;
+	}
+	@media (max-width: 768px) {
+		max-width: none;
+	}
+}
+.fullscreen{
+	min-height: 100vh;
+}
+.title {
+	text-align: center;
+	padding: 40px 0;
+	position: relative;
+
+	&:after{
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 10%;
+		background-color: #000;
+		top: 70%;
+		left: 45%;
+		@media (max-width: 570px) {
+			top: 95%;
+			left: 45%;
+		}	
+	}
+	@media (max-width: 570px) {
+		padding: 20px 5px 5px;
+	}
+}	
+

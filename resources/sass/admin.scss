@@ -1,0 +1,23 @@
+// Variables
+@import 'variables';
+@import 'css_reset';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.router-link-exact-active {
+	border: 1px solid white;
+	background: #737373;
+	border-radius: 0px;
+}
+.cont {
+	max-width: 940px;
+	margin: 0px auto;
+}
+.big-table-container {
+	max-width: 1170px;
+	margin: auto;
+}
+.btn-warning {
+	border: 1px solid black;
+}
